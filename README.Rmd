@@ -10,26 +10,25 @@ pkg.win <- paste0(pkg.name, ver, ".zip")
 
 # mcglm `r ver`
 
-[![Build Status](https://travis-ci.org/wbonat/mcglm.svg?branch=master)](https://travis-ci.org/wbonat/mcglm)
-Build status for the stable version (`master` branch)
-
-[![Build Status](https://travis-ci.org/wbonat/mcglm.svg?branch=devel)](https://travis-ci.org/wbonat/mcglm)
-Build status for the development version (`devel` branch)
-
 The `mcglm` package fits multivariate covariance generalized linear models
 (Bonat and Jorgensen, 2016).
 
 ## Introduction
 
-`mcglm` fits multivariate covariance generalized linear models. 
-It allows use a different linear predictor for each response variable of a
-multivariate response. The response variable can be continous or
-dicrete, like counts and binary and also limited continuos ou
-discrete/continuous inflated responses. The most important and relevant
-feature is that many covariance structures can be used to model the
-relations among variables.
+`mcglm` is an R package designed to fit Multivariate Covariance Generalized Linear Models.
+It allows you to specify a distinct linear predictor for each response variable, 
+offering exceptional flexibility for analyses involving multiple outcomes.
 
-This package is part of the Thesis of the first author.
+With `mcglm`, you can model a wide range of response types — continuous, discrete 
+(such as counts and binary), limited, and even zero inflated responses, 
+whether continuous or mixed.
+
+Its main strength lies in the ability to capture complex relationships among 
+variables through multiple covariance structures, enabling more realistic and 
+robust multivariate modeling.
+
+This package was developed as part of the Wagner's Ph.D. thesis, 
+combining academic rigor with practical value for the statistical modeling community.
 
 ## Download and install
 
@@ -41,7 +40,7 @@ install automatically from this GitHub repository:
 
 ```{r, eval=FALSE}
 library(devtools)
-install_github("wbonat/mcglm")
+install_github("bonatwagner/mcglm")
 ```
 
 Alternatively, download the package tarball: [`r pkg.source`][]
@@ -79,27 +78,9 @@ instw <- paste0("install.packages(", "\"", pkg.win, "\"", ", repos = NULL,\n",
 cat(instw, sep = "\n")
 ```
 
-### Development version
-
-By default, if you use `devtools::install_github()`, or download any of the
-package tarball or Windows binary version, it will install the stable
-version of the package (from the `master` branch of this repository).
-
-If you want to install the development version, you can use
-
-```r
-library(devtools)
-install_github("wbonat/mcglm", ref = "devel")
-```
-
-Note that the development version can contain bugs and other unknown
-features, so use it at your own risk!
-
 ## Authors
 
 - [Wagner Hugo Bonat][] (author and main developer)
-- [Walmes Marques Zeviani][] (contributor)
-- [Fernando de Pol Mayer][] (contributor)
 
 ## Documentation
 
@@ -121,22 +102,10 @@ See [LICENSE](./LICENSE)
 
 <!-- links -->
 
-```{r, echo=FALSE, include=FALSE}
-pkg.source.link <- paste0(
-    "https://github.com/wbonat/mcglm/raw/master/downloads/",
-    pkg.source)
-pkg.win.link <- paste0(
-    "https://github.com/wbonat/mcglm/raw/master/downloads/",
-    pkg.win)
-```
-
-[GNU General Public License (GPL) v3.0]: http://www.gnu.org/licenses/gpl-3.0.html
+[GNU General Public License (GPL) v3.0]: https://www.gnu.org/licenses/gpl-3.0.html
 [`roxygen2`]: https://github.com/klutometis/roxygen
 [`devtools`]: https://github.com/hadley/devtools
-[`r pkg.source`]: `r pkg.source.link`
-[`r pkg.win`]: `r pkg.win.link`
-[mcglm-manual.pdf]: https://github.com/wbonat/mcglm/raw/master/downloads/mcglm-manual.pdf
-[Gitflow worflow]: http://nvie.com/posts/a-successful-git-branching-model/
-[Wagner Hugo Bonat]: http://www.leg.ufpr.br/~wagner
-[Walmes Marques Zeviani]: http://www.leg.ufpr.br/~walmes
-[Fernando de Pol Mayer]: http://www.leg.ufpr.br/~fernandomayer
+[`r pkg.source`]: https://github.com/bonatwagner/mcglm/blob/main/mcglm_0.9.0.tar.gz
+[mcglm-manual.pdf]: https://github.com/bonatwagner/mcglm/blob/main/mcglm.Rcheck/mcglm-manual.pdf
+[Gitflow worflow]: https://nvie.com/posts/a-successful-git-branching-model/
+[Wagner Hugo Bonat]: https://www.linkedin.com/in/wagner-bonat

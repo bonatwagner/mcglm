@@ -77,8 +77,12 @@ This R package is develop using
 [`devtools`](https://github.com/r-lib/devtools) to check and build.
 Also, we adopt the [Gitflow
 worflow](https://nvie.com/posts/a-successful-git-branching-model/) in
-this repository. Please, see the [instructions for
-contributing](./CONTRIBUTING.md) to collaborate.
+this repository.
+
+## Instructions for contributing
+
+Please, see the [instructions for contributing](./CONTRIBUTING.md) to
+collaborate.
 
 ## License
 

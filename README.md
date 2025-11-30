@@ -68,7 +68,7 @@ from inside `R`:
 ## Documentation
 
 The reference manual in PDF can be found here:
-[mcglm-manual.pdf](sftp://200.17.213.49:2200/home/wagner/public_html/docmcglm/mcglm.pdf)
+[mcglm-manual.pdf](https://github.com/bonatwagner/mcglm/mcglm.pdf)
 
 ## Contributing
 

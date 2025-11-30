@@ -31,7 +31,7 @@ To install the stable version of [`mcglm`][], use
 
 ```{r, eval=FALSE}
 #library(devtools)
-#install_git("wbonat/mcglm")
+#install_git("bonatwagner/mcglm")
 ```
 
 ```{r, eval=FALSE, error=FALSE, message=FALSE, warning=FALSE}
@@ -324,5 +324,5 @@ summary(fit.logit.power)
 
 <!---------------------------------------------------------------------- -->
 
-[`mcglm`]: http://github.com/wbonat/mcglm
-[mcglm/README]: http://github.com/wbonat/mcglm/blob/master/README.md
+[`mcglm`]: https://github.com/bonatwagner/mcglm
+[mcglm/README]: https://github.com/bonatwagner/mcglm/blob/main/README.md

@@ -31,8 +31,8 @@ Suggests: testthat, knitr, rmarkdown, MASS, mvtnorm, tweedie, devtools
 Imports: stats, Matrix, assertthat, graphics, Rcpp (>= 0.12.16)
 License: GPL-3 | file LICENSE
 LazyData: TRUE
-URL: mcglm.leg.ufpr.br
-BugReports: https://github.com/wbonat/mcglm/issues
+URL: https://github.com/bonatwagner/mcglm
+BugReports: https://github.com/bonatwagner/mcglm/issues
 Encoding: UTF-8
 VignetteBuilder: knitr
 RoxygenNote: 7.3.3

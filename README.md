@@ -73,8 +73,8 @@ The reference manual in PDF can be found here:
 ## Contributing
 
 This R package is develop using
-[`roxygen2`](https://github.com/klutometis/roxygen) for documentation
-and [`devtools`](https://github.com/hadley/devtools) to check and build.
+[`roxygen2`](https://github.com/r-lib/roxygen2) for documentation and
+[`devtools`](https://github.com/r-lib/devtools) to check and build.
 Also, we adopt the [Gitflow
 worflow](https://nvie.com/posts/a-successful-git-branching-model/) in
 this repository. Please, see the [instructions for

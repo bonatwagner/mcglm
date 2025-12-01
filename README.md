@@ -33,33 +33,6 @@ install automatically from this GitHub repository:
     library(devtools)
     install_github("bonatwagner/mcglm")
 
-Alternatively, download the package tarball:
-[mcglm\_0.9.0.tar.gz](https://github.com/bonatwagner/mcglm/blob/main/mcglm_0.9.0.tar.gz)
-and run from a UNIX terminal (make sure you are on the container file
-directory):
-
-    R CMD INSTALL -l /path/to/your/R/library mcglm_0.9.0.tar.gz
-
-Or, inside an `R` session:
-
-    install.packages("mcglm_0.9.0.tar.gz", repos = NULL,
-                     lib.loc = "/path/to/your/R/library",
-                     dependencies = TRUE)
-
-Note that `-l /path/to/your/R/library` in the former and
-`lib.loc = "/path/to/your/R/library"` in the latter are optional. Only
-use it if you want to install in a personal library, other than the
-standard R library.
-
-### Windows
-
-Download Windows binary version: \[mcglm\_0.9.0.zip\]\[\] (**do not
-unzip it under Windows**), put the file in your working directory, and
-from inside `R`:
-
-    install.packages("mcglm_0.9.0.zip", repos = NULL,
-                     dependencies = TRUE)
-
 ## Authors
 
 -   [Wagner Hugo Bonat](https://www.linkedin.com/in/wagner-bonat)

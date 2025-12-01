@@ -1,13 +1,3 @@
-```{r, echo=FALSE, include=FALSE}
-## Get VERSION and create file names
-ver <- sub(x=grep(x=readLines("DESCRIPTION"), pattern="^Version: ",
-                  value=TRUE),
-           pattern="^Version: ", replacement="")
-pkg.name <- "mcglm_"
-pkg.source <- paste0(pkg.name, ver, ".tar.gz")
-pkg.win <- paste0(pkg.name, ver, ".zip")
-```
-
 # mcglm `r ver`
 
 The `mcglm` package fits multivariate covariance generalized linear models
@@ -43,40 +33,6 @@ library(devtools)
 install_github("bonatwagner/mcglm")
 ```
 
-Alternatively, download the package tarball: [`r pkg.source`][]
-and run from a UNIX terminal (make sure you are on the container file
-directory):
-
-```{r, echo=FALSE, comment=NA}
-cmd <- paste("R CMD INSTALL -l /path/to/your/R/library", pkg.source)
-cat(cmd, sep = "\n")
-```
-
-Or, inside an `R` session:
-
-```{r, echo=FALSE, comment=NA}
-inst <- paste0("install.packages(", "\"", pkg.source, "\"", ", repos = NULL,\n",
-               "                 lib.loc = \"/path/to/your/R/library\",\n",
-               "                 dependencies = TRUE)")
-cat(inst, sep = "\n")
-```
-
-Note that `-l /path/to/your/R/library` in the former and `lib.loc =
-"/path/to/your/R/library"` in the latter are optional. Only use it if
-you want to install in a personal library, other than the standard R
-library.
-
-### Windows
-
-Download Windows binary version: [`r pkg.win`][] (**do not unzip
-it under Windows**), put the file in your working directory, and from
-inside `R`:
-
-```{r, echo=FALSE, comment=NA}
-instw <- paste0("install.packages(", "\"", pkg.win, "\"", ", repos = NULL,\n",
-                "                 dependencies = TRUE)")
-cat(instw, sep = "\n")
-```
 
 ## Authors
 
@@ -105,7 +61,6 @@ See [LICENSE](./LICENSE)
 [GNU General Public License (GPL) v3.0]: https://www.gnu.org/licenses/gpl-3.0.html
 [`roxygen2`]: https://github.com/r-lib/roxygen2
 [`devtools`]: https://github.com/r-lib/devtools
-[`r pkg.source`]: https://github.com/bonatwagner/mcglm/blob/main/mcglm_0.9.0.tar.gz
 [Gitflow worflow]: https://nvie.com/posts/a-successful-git-branching-model/
 [Wagner Hugo Bonat]: https://www.linkedin.com/in/wagner-bonat
 [instructions for contributing]: https://github.com/bonatwagner/mcglm/blob/main/CONTRIBUTING.md

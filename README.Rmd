@@ -91,7 +91,7 @@ in this repository.
 ## Instructions for contributing
 
 Please, see the
-[instructions for contributing](./CONTRIBUTING.md) to collaborate.
+[instructions for contributing][] to collaborate.
 
 ## License
 
@@ -108,3 +108,4 @@ See [LICENSE](./LICENSE)
 [`r pkg.source`]: https://github.com/bonatwagner/mcglm/blob/main/mcglm_0.9.0.tar.gz
 [Gitflow worflow]: https://nvie.com/posts/a-successful-git-branching-model/
 [Wagner Hugo Bonat]: https://www.linkedin.com/in/wagner-bonat
+[instructions for contributing]: https://github.com/bonatwagner/mcglm/blob/main/CONTRIBUTING.md

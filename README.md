@@ -76,8 +76,9 @@ this repository.
 
 ## Instructions for contributing
 
-Please, see the [instructions for contributing](./CONTRIBUTING.md) to
-collaborate.
+Please, see the [instructions for
+contributing](https://github.com/bonatwagner/mcglm/blob/main/CONTRIBUTING.md)
+to collaborate.
 
 ## License
 

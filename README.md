@@ -65,11 +65,6 @@ from inside `R`:
 -   [Wagner Hugo Bonat](https://www.linkedin.com/in/wagner-bonat)
     (author and main developer)
 
-## Documentation
-
-The reference manual in PDF can be found here:
-[mcglm-manual.pdf](https://github.com/bonatwagner/mcglm/blob/main/mcglm-manual.pdf)
-
 ## Contributing
 
 This R package is develop using

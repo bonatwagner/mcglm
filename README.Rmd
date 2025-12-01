@@ -82,10 +82,6 @@ cat(instw, sep = "\n")
 
 - [Wagner Hugo Bonat][] (author and main developer)
 
-## Documentation
-
-The reference manual in PDF can be found here: [mcglm-manual.pdf][]
-
 ## Contributing
 
 This R package is develop using [`roxygen2`][] for documentation and
@@ -110,6 +106,5 @@ See [LICENSE](./LICENSE)
 [`roxygen2`]: https://github.com/r-lib/roxygen2
 [`devtools`]: https://github.com/r-lib/devtools
 [`r pkg.source`]: https://github.com/bonatwagner/mcglm/blob/main/mcglm_0.9.0.tar.gz
-[mcglm-manual.pdf]: https://github.com/bonatwagner/mcglm/blob/main/mcglm-manual.pdf
 [Gitflow worflow]: https://nvie.com/posts/a-successful-git-branching-model/
 [Wagner Hugo Bonat]: https://www.linkedin.com/in/wagner-bonat

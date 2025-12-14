@@ -6,8 +6,12 @@
 #' @param object an object or a list of objects representing a model
 #' of \code{mcglm} class.
 #' @param verbose logical. Print or not the pKLIC value.
-#' @return Returns the value of the pseudo Kullback-Leibler information
-#' criterion.
+#' @return An invisible list with a single numeric component:
+#' \describe{
+#'   \item{pKLIC}{The pseudo Kullback–Leibler Information Criterion computed
+#'   from the pseudo log-likelihood and a penalty term based on the sensitivity
+#'   and variability matrices.}
+#' }
 #'
 #' @seealso \code{gof}, \code{plogLik}, \code{ESS}, \code{pAIC},
 #' \code{GOSHO} and \code{RJC}.

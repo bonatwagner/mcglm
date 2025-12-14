@@ -26,9 +26,10 @@
 #'@param compute_derivative_beta Logical. Compute or not the derivative
 #'     with respect to regression parameters.
 #'@keywords internal
-#'@return A list with the Cholesky decomposition of \eqn{\Sigma},
-#'     \eqn{\Sigma^{-1}} and the derivative of \eqn{\Sigma} with respect
-#'     to the power and tau parameters.
+#'@return A list of matrices. The function returns a list of matrices with the
+#'     Cholesky decomposition of \eqn{\Sigma}, \eqn{\Sigma^{-1}} and the derivative
+#'     of \eqn{\Sigma} with respect to the power and tau parameters.
+#'     The returned object is intended for internal use only.
 #'@seealso \code{\link{mc_link_function}},
 #'     \code{\link{mc_variance_function}}, \code{\link{mc_build_omega}}.
 

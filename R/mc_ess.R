@@ -8,7 +8,11 @@
 #' of \code{mcglm} class.
 #' @param verbose logical. Print or not the ESS value.
 #'
-#' @return Returns the value of the generalized error sum of squares (ESS).
+#' @return An invisible list with a single numeric component:
+#' \describe{
+#'   \item{ESS}{The generalized error sum of squares, scaled by the residual
+#'   degrees of freedom.}
+#' }
 #' @seealso \code{gof}, \code{plogLik}, \code{pAIC}, \code{pKLIC},
 #' \code{GOSHO} and \code{RJC}.
 #'

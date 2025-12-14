@@ -1,4 +1,4 @@
-# mcglm `r ver`
+# mcglm 0.9.0
 
 The `mcglm` package fits multivariate covariance generalized linear models
 (Bonat and Jorgensen, 2016).
@@ -13,7 +13,7 @@ With `mcglm`, you can model a wide range of response types — continuous, discr
 (such as counts and binary), limited, and even zero inflated responses, 
 whether continuous or mixed.
 
-Its main strength lies in the ability to capture complex relationships among 
+Its main strength lies in the ability to capture complex relationships between
 variables through multiple covariance structures, enabling more realistic and 
 robust multivariate modeling.
 
@@ -49,16 +49,8 @@ in this repository.
 Please, see the
 [instructions for contributing][] to collaborate.
 
-## License
-
-This package is released under the
-[GNU General Public License (GPL) v3.0][].
-
-See [LICENSE](./LICENSE)
-
 <!-- links -->
 
-[GNU General Public License (GPL) v3.0]: https://www.gnu.org/licenses/gpl-3.0.html
 [`roxygen2`]: https://github.com/r-lib/roxygen2
 [`devtools`]: https://github.com/r-lib/devtools
 [Gitflow worflow]: https://nvie.com/posts/a-successful-git-branching-model/

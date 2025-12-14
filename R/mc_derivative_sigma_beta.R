@@ -10,8 +10,9 @@
 #' @param V_sqrt A matrix.
 #' @param variance A string specifying the variance function name.
 #' @keywords internal
-#' @return A list of matrices, containg the derivatives of \eqn{V^{1/2}}
+#' @return A list of matrices, with the derivatives of \eqn{V^{1/2}}
 #'     with respect to the regression parameters.
+#'     The returned object is intended for internal use only.
 
 mc_derivative_sigma_beta <- function(D, D_V_sqrt_mu, Omega, V_sqrt,
                                      variance) {

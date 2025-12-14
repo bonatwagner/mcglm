@@ -55,8 +55,10 @@ of C with respect to regression parameters.}
 of C with respect the covariance parameters.}
 }
 \value{
-A list with the inverse of the C matrix and the derivatives of
-    the C matrix with respect to rho, power and tau parameters.
+A list of matrices. This function return the variance-covariance matrix
+    C or its inverse along with its respective matrices of derivatives with
+    respect to rho, power and tau parameters.
+    The returned object is intended for internal use only.
 }
 \description{
 This function builds the joint variance-covariance matrix

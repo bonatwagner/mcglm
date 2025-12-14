@@ -8,7 +8,7 @@
 #'
 #' @param vector A vector indexing model regression coefficients.
 #' @keywords internal
-#' @return A matrix.
+#' @return A matrix. The returned object is intended for internal use only.
 
 ## Building F matrix for multivariate hypothesis tests ---------------
 mc_build_F <- function(vector) {

@@ -7,7 +7,7 @@
 #' @param inv_C A matrix.
 #' @param res A vector of residuals.
 #' @param W Matrix of weights.
-#' @return A vector
+#' @return A vector. The returned object is intended for internal use only.
 #' @keywords internal
 #' @details It is an internal function.
 

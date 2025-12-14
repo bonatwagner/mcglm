@@ -15,7 +15,7 @@ discrete (such as counts and binary), limited, and even zero inflated
 responses, whether continuous or mixed.
 
 Its main strength lies in the ability to capture complex relationships
-among variables through multiple covariance structures, enabling more
+between variables through multiple covariance structures, enabling more
 realistic and robust multivariate modeling.
 
 This package was developed as part of the Wagner’s Ph.D. thesis,
@@ -52,12 +52,5 @@ this repository.
 Please, see the [instructions for
 contributing](https://github.com/bonatwagner/mcglm/blob/main/CONTRIBUTING.md)
 to collaborate.
-
-## License
-
-This package is released under the [GNU General Public License (GPL)
-v3.0](https://www.gnu.org/licenses/gpl-3.0.html).
-
-See [LICENSE](./LICENSE)
 
 <!-- links -->

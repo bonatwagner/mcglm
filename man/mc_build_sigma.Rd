@@ -50,9 +50,10 @@ will be estimated.}
 with respect to regression parameters.}
 }
 \value{
-A list with the Cholesky decomposition of \eqn{\Sigma},
-    \eqn{\Sigma^{-1}} and the derivative of \eqn{\Sigma} with respect
-    to the power and tau parameters.
+A list of matrices. The function returns a list of matrices with the
+    Cholesky decomposition of \eqn{\Sigma}, \eqn{\Sigma^{-1}} and the derivative
+    of \eqn{\Sigma} with respect to the power and tau parameters.
+    The returned object is intended for internal use only.
 }
 \description{
 This function builds a variance-covariance matrix, based

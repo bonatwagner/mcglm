@@ -15,7 +15,8 @@
 #' @param list_neigh list of neighboors.
 #' @param intrinsic logical.
 #' @return A list of a matrix (\code{intrinsic = TRUE}) or two matrices
-#' (\code{intrinsic = FALSE}).
+#' (\code{intrinsic = FALSE}). The main use of these matrices are as input in the
+#' \code{mcglm} function as linear covariance models in the argument \code{matrix_pred}.
 #'
 #' @source Bonat, W. H. (2018). Multiple Response Variables Regression
 #' Models in R: The mcglm Package. Journal of Statistical Software, 84(4):1--30.

@@ -10,7 +10,7 @@ mc_build_F(vector)
 \item{vector}{A vector indexing model regression coefficients.}
 }
 \value{
-A matrix.
+A matrix. The returned object is intended for internal use only.
 }
 \description{
 The function \code{mc_build_F} is just an auxiliar

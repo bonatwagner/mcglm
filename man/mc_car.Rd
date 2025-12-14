@@ -17,7 +17,8 @@ mc_car(list_neigh, intrinsic = FALSE)
 }
 \value{
 A list of a matrix (\code{intrinsic = TRUE}) or two matrices
-(\code{intrinsic = FALSE}).
+(\code{intrinsic = FALSE}). The main use of these matrices are as input in the
+\code{mcglm} function as linear covariance models in the argument \code{matrix_pred}.
 }
 \description{
 The function \code{mc_car} helps to build the components

@@ -28,7 +28,10 @@
 #' @source Bonat, W. H. (2018). Multiple Response Variables Regression
 #' Models in R: The mcglm Package. Journal of Statistical Software, 84(4):1--30.
 #'
-#' @return A matrix of dgCMatrix class.
+#' @return A list containing a sparse matrix of class \code{dgCMatrix}.
+#'   This matrix represents the design matrix for the linear predictor and
+#'   is intended to be supplied to the \code{matrix_pred} argument of
+#'   \code{\link{mcglm}}.
 #' @examples
 #' id <- rep(1:2, each = 4)
 #' time <- rep(1:4, 2)

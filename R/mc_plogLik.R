@@ -1,13 +1,49 @@
-#' @title Gaussian Pseudo-loglikelihood
+#' @title Gaussian Pseudo-Loglikelihood
 #' @author Wagner Hugo Bonat, \email{wbonat@@ufpr.br}
 #'
-#' @description Extract the Gaussian pseudo-loglikelihood (plogLik)
-#' value for objects of \code{mcglm} class.
+#' @description
+#' Computes the Gaussian pseudo-loglikelihood for fitted multivariate
+#' covariance generalized linear models. The pseudo-loglikelihood is
+#' obtained by assuming a multivariate normal distribution for the
+#' stacked response vector, using the estimated mean vector and
+#' covariance matrix from the fitted \code{mcglm} object.
 #'
-#' @param object an object or a list of objects representing a model
-#' of \code{mcglm} class.
-#' @param verbose logical. Print or not the plogLik value.
-#' @return Returns the value of the Gaussian pseudo-loglikelihood.
+#' @param object An object of class \code{mcglm} or a list of such objects.
+#'   When a list is supplied, the pseudo-loglikelihood is computed for the
+#'   joint model obtained by stacking the responses, fitted values and
+#'   covariance matrices of all elements in the list.
+#' @param verbose Logical indicating whether the pseudo-loglikelihood value
+#'   should be printed to the console. Defaults to \code{TRUE}.
+#'
+#' @return
+#' An invisible list with the following components:
+#' \describe{
+#'   \item{plogLik}{A numeric value giving the Gaussian pseudo-loglikelihood.}
+#'   \item{df}{An integer giving the total number of estimated parameters
+#'   (degrees of freedom) used in the model.}
+#' }
+#'
+#' @details
+#' The Gaussian pseudo-loglikelihood is computed as
+#' \deqn{
+#'   \ell_p = -\frac{n}{2}\log(2\pi)
+#'            - \frac{1}{2}\log|\Sigma|
+#'            - \frac{1}{2}(y - \mu)^\top \Sigma^{-1} (y - \mu),
+#' }
+#' where \eqn{y} is the stacked vector of observed responses, \eqn{\mu} is
+#' the stacked vector of fitted means, and \eqn{\Sigma} is the estimated
+#' covariance matrix. For a list of \code{mcglm} objects, block-diagonal
+#' covariance matrices are constructed internally.
+#'
+#' This quantity is used mainly for model comparison purposes and as a
+#' building block for pseudo-information criteria such as \code{pAIC}
+#' and \code{pBIC}. It is not a true likelihood unless the Gaussian
+#' assumption holds.
+#'
+#' @seealso
+#' \code{pAIC}, \code{pBIC}, \code{ESS}, \code{pKLIC}, \code{GOSHO},
+#' \code{RJC}
+#'
 #' @export
 
 plogLik <- function(object, verbose = TRUE) {

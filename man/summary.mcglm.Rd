@@ -2,7 +2,7 @@
 % Please edit documentation in R/mc_S3_methods.R
 \name{summary.mcglm}
 \alias{summary.mcglm}
-\title{Summarizing}
+\title{Summary for mcglm Objects}
 \usage{
 \method{summary}{mcglm}(
   object,
@@ -12,24 +12,29 @@
 )
 }
 \arguments{
-\item{object}{an object of \code{mcglm} class.}
+\item{object}{An object of class \code{mcglm}.}
 
-\item{verbose}{logical. Print or not the model summary.}
+\item{verbose}{Logical indicating whether the summary should be printed to the console.
+If \code{FALSE}, the summary is returned invisibly.}
 
-\item{print}{print only part of the model summary, options are
-\code{Regression}, \code{power}, \code{Dispersion} and \code{Correlation}.}
+\item{print}{A character vector specifying which components of the model summary
+should be printed. Possible values are \code{"Regression"},
+\code{"power"}, \code{"Dispersion"} and \code{"Correlation"}.}
 
-\item{...}{additional arguments affecting the summary produced. Note
-the there is no extra options for mcglm object class.}
+\item{...}{Further arguments passed to or from other methods. Currently ignored.}
 }
 \value{
-Print a \code{mcglm} object.
+Invisibly returns a list containing summary tables for each response
+variable, and optionally a correlation summary when applicable.
 }
 \description{
-The default summary method for an object of \code{mcglm} class.
+Produces a summary of a fitted \code{mcglm} object, including estimates,
+standard errors, Wald statistics and p-values for regression,
+dispersion, power and correlation parameters.
 }
 \seealso{
-\code{print}.
+\code{\link{print.mcglm}},
+\code{\link{coef.mcglm}}
 }
 \author{
 Wagner Hugo Bonat, \email{wbonat@ufpr.br}

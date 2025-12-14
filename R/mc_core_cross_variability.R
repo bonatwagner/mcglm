@@ -7,7 +7,7 @@
 #'
 #' @param A A matrix.
 #' @param res A vector of residuals.
-#' @param W A matrix of weights.
+#' @param W A matrix of weights. The returned object is intended for internal use only.
 #' @keywords internal
 
 covprod <- function(A, res, W) {

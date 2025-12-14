@@ -2,36 +2,32 @@
 % Please edit documentation in R/mc_S3_methods.R
 \name{plot.mcglm}
 \alias{plot.mcglm}
-\title{Residuals and algorithm check plots}
+\title{Diagnostic Plots for mcglm Objects}
 \usage{
-\method{plot}{mcglm}(x, type = "residuals", ...)
+\method{plot}{mcglm}(x, type = c("residuals", "algorithm", "partial_residuals"), ...)
 }
 \arguments{
-\item{x}{a fitted \code{mcglm} object.}
+\item{x}{A fitted object of class \code{mcglm}.}
 
-\item{type}{specify which graphical analysis will be performed.
-Options are: \code{"residuals"} and \code{"algorithm"}.}
+\item{type}{Character string specifying the type of diagnostic plot to be produced.
+Possible values are \code{"residuals"}, \code{"algorithm"} and
+\code{"partial_residuals"}.}
 
-\item{...}{additional arguments affecting the plot produced. Note
-that there is no extra options for mcglm object class.}
+\item{...}{Additional arguments. Currently ignored and included for compatibility
+with the generic \code{\link[graphics]{plot}} function.}
 }
 \value{
-The function \code{plot.mcglm} was designed to offer a fast
-residuals analysis based on the Pearson residuals. Current version
-offers a simple Pearson residuals versus fitted values and a quantile
-plot. When using \code{algorithm = TRUE} the function will plot a summary of
-the fitting algorithm shows the trajectory or iterations of the fitting
-algorithm. The iterations are shown in terms of values of the model
-parameters and also the actually value of the quasi-score and Pearson
-estimating functions. Hence, a quickly check of the algorithm
-convergence is obtained.
+No return value, called for its side effects (diagnostic plots).
 }
 \description{
-Residual and algorithm check analysis for objects of
-\code{mcglm} class.
+Produces diagnostic plots for fitted \code{mcglm} objects.
+Available diagnostics include residual analysis, inspection of
+the fitting algorithm convergence and partial residual plots.
 }
 \seealso{
-\code{residuals} and \code{fitted}.
+\code{\link[stats]{residuals}},
+\code{\link[stats]{fitted}},
+\code{\link[graphics]{plot}}
 }
 \author{
 Wagner Hugo Bonat, \email{wbonat@ufpr.br}

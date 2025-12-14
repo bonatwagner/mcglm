@@ -20,7 +20,9 @@ mc_complete_data(data, id, index, id.exp)
 \item{id.exp}{how the index is expected to be for all subjects.}
 }
 \value{
-A data.frame with the same number of observations by subject.
+A data.frame with the same number of observations by subject. It is intended
+as a helper function to build the linear matrix predictor for models that require
+the same number of observations by subjects.
 }
 \description{
 The function \code{mc_complete_data} completes a data

@@ -2,7 +2,7 @@ Package: mcglm
 Type: Package
 Title: Multivariate Covariance Generalized Linear Models
 Version: 0.9.0
-Date: 2025-11-27
+Date: 2025-12-14
 Author: Wagner Hugo Bonat [aut, cre]
 Maintainer: Wagner Hugo Bonat <wbonat@ufpr.br>
 Authors@R: c(person(c("Wagner","Hugo"), "Bonat", role = c("aut", "cre"),
